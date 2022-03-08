@@ -1,9 +1,26 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    {% for post in posts %}
-        <img src="{{ post.image }}" alt="">
-        <a href="{% url 'post_detail' post.slug %}"><h2>{{ post.title }}</h2></a>
-        <p>{{ post.content.html|safe }}</p>
-    {% endfor %}
+    <section id="blog">
+        <div class="blog-heading">
+            <span>My Recent Posts</span>
+            <h3>My Blog</h3>
+        </div>
+        <div class="blog-container">
+            {% for post in posts %}
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img src="{{ post.image }}" alt="img">
+                    </div>
+                    <div class="blog-text">
+                        <span>{{ post.publish_date }}</span>
+                        <a href="{% url 'post_detail' post.slug %}" class="blog-title">{{ post.title }}</a>
+                        <p>{{ post.content.html|safe }}</p>
+                        <a href="{% url 'post_detail' post.slug %}">Read More</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
 {% endblock %}
+
