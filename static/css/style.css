@@ -4,16 +4,6 @@
     font-family: poppins;
     box-sizing: border-box;
 }
-@font-face {
-    font-family: Vazir;
-    font-style: normal;
-    font-weight: bold;
-    src: url('fonts/Vazir-Bold.eot');
-    src: url('fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'), 
-    url('fonts/Vazir-Bold.woff2') format('woff2'), 
-    url('fonts/Vazir-Bold.woff') format('woff'), 
-    url('fonts/Vazir-Bold.ttf') format('truetype');
-}
 a{
     text-decoration: none;
 }
@@ -21,10 +11,9 @@ ul{
     list-style: none;
 }
 body{
+    direction: rtl;
     margin: 0px;
     padding: 0px;
-    font-family: 'Vazir', Arial, sans-serif;
-    font-weight: normal;
 }
 
 /* blog */

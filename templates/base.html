@@ -9,13 +9,16 @@
     <title>Django Blog</title>
     <!-- css -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/IRANMarker.ttf' %}">
 </head>
 <body>
     <!-- navbar -->
     <div class="navbar">
-            <a href="#">وبلاگ جنگو</a>
+        <a href="{% url 'post_list' %}">وبلاگ جنگو</a>
             <a href="#">تماس با من</a>
-            <input class="search-input" type="text" placeholder="جستجو">
+            <form action="{% url 'post_search' %}" method="get">
+                <input name='search' class="search-input" type="text" placeholder="جستجو">
+            </form>
     </div>
     {% block content %}
     {% endblock %}
