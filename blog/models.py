@@ -11,7 +11,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     content = QuillField()
     image = models.ImageField(upload_to='static/images')
-    slug = models.SlugField(unique=True)
+    slug = models.SlugField(unique=True, allow_unicode=True)
     publish_date = models.DateTimeField()
     status = models.BooleanField(default=0)
 

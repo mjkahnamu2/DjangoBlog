@@ -4,6 +4,16 @@
     font-family: poppins;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: bold;
+    src: url('fonts/Vazir-Bold.eot');
+    src: url('fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'), 
+    url('fonts/Vazir-Bold.woff2') format('woff2'), 
+    url('fonts/Vazir-Bold.woff') format('woff'), 
+    url('fonts/Vazir-Bold.ttf') format('truetype');
+}
 a{
     text-decoration: none;
 }
@@ -13,7 +23,8 @@ ul{
 body{
     margin: 0px;
     padding: 0px;
-    font-family: poppins;
+    font-family: 'Vazir', Arial, sans-serif;
+    font-weight: normal;
 }
 
 /* blog */
@@ -118,23 +129,21 @@ body{
 }
 .navbar{
     background-color: #333;
-    float: left;
-    text-align: left;
+    float: right;
     width: 100%;
 }
 .navbar a{
-    float: left;
+    float: right;
     color: #f2f2f2;
     text-align: left;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
-
 .search-input{
     padding: 5px;
     margin-top: 10px;
     position: absolute;
-    right: 10px;
-    left: auto;
+    right: auto;
+    left: 5px;
 }

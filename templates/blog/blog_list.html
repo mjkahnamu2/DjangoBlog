@@ -3,8 +3,8 @@
 {% block content %}
     <section id="blog">
         <div class="blog-heading">
-            <span>My Recent Posts</span>
-            <h3>My Blog</h3>
+            <span>پست های اخیر</span>
+            <h3>وبلاگ شخصی</h3>
         </div>
         <div class="blog-container">
             {% for post in posts %}
@@ -15,8 +15,8 @@
                     <div class="blog-text">
                         <span>{{ post.publish_date }}</span>
                         <a href="{% url 'post_detail' post.slug %}" class="blog-title">{{ post.title }}</a>
-                        <p>{{ post.content.html|safe }}</p>
-                        <a href="{% url 'post_detail' post.slug %}">Read More</a>
+                        <!-- <p>{{ post.content.html|safe }}</p> -->
+                        <a href="{% url 'post_detail' post.slug %}">بیشتر...</a>
                     </div>
                 </div>
             {% endfor %}
