@@ -1,5 +1,6 @@
 from django.db import models
 from django_quill.fields import QuillField
+from extensions.utils import jalali_converter
 
 
 STATUS = (
@@ -18,6 +19,8 @@ class Post(models.Model):
     class Meta:
         ordering = ['-publish_date']
 
+    def jpublish(self):
+        return jalali_converter(self.publish_date)
 
     def __str__(self):
         return self.title

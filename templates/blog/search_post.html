@@ -1,10 +1,23 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h2>Search Results</h2>
-    <ul>
-        {% for post in object_list %}
-            <li>{{ post.title }}</li>
-        {% endfor %}
-    </ul>
+    <section id="blog">
+        <div class="blog-heading">
+            <h2>نتایج جستجو</h2>
+        </div>
+        <div class="blog-container">
+            {% for post in object_list %}
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img src="{{ post.image.url }}" alt="image">
+                    </div>
+                    <div class="blog-text">
+                        <span>{{ post.publish_date }}</span>
+                        <h3 class="blog-title">{{ post.title }}</h3>
+                        <a href="{% url 'post_detail' post.slug %}">بیشتر...</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
 {% endblock %}

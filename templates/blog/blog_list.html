@@ -13,8 +13,8 @@
                         <img src="{{ post.image }}" alt="img">
                     </div>
                     <div class="blog-text">
-                        <span>{{ post.publish_date }}</span>
-                        <a href="{% url 'post_detail' post.slug %}" class="blog-title">{{ post.title }}</a>
+                        <span>{{ post.jpublish }}</span>
+                        <h3 class="blog-title">{{ post.title }}</h3>
                         <!-- <p>{{ post.content.html|safe }}</p> -->
                         <a href="{% url 'post_detail' post.slug %}">بیشتر...</a>
                     </div>
