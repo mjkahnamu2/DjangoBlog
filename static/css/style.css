@@ -1,3 +1,5 @@
+.content{
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -18,9 +20,8 @@ ul{
     src: url(../fonts/myfont.ttf);
 }
 body{
-    background-color: #131417;
+    background-color: #000000;
     font-family: myfont;
-    margin: 0px;
     padding: 0px;
 }
 
@@ -41,7 +42,7 @@ body{
     flex-direction: column;
 }
 .blog-heading span{
-    color: #2E8542;
+    color: #1A73E8;
 }
 .blog-heading h3{
     font-size: 2.4rem;
@@ -77,7 +78,7 @@ body{
     flex-direction: column;
 }
 .blog-text span{
-    color:  #2E8542;
+    color:  #1A73E8;
     font-size: 0.9rem;
 }
 .blog-text .blog-title{
@@ -99,7 +100,7 @@ body{
     color: #ffffff;
 }
 .blog-text a:hover{
-    color: #ffffff;
+    color: #1A73E8;
     font-weight: bolder;
     transition: all ease 0.3s;
 }
@@ -126,19 +127,21 @@ body{
     overflow: hidden;
     top: 0;
     position: fixed;
-    background-color: #222221;
+    background-color: #222221;;
     float: right;
     width: 100%;
-    border-bottom: 2px solid #404040;
 }
 .navbar a{
     float: right;
-    color: #f2f2f2;
+    color: #ffffff;
     text-align: left;
     padding: 14px 16px;
     text-decoration: none;
     font-size: large;
     font-weight: bold;
+}
+.navbar a:hover{
+    color: #1A73E8;
 }
 .search-input{
     padding: 5px;
