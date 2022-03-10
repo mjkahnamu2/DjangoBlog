@@ -14,9 +14,7 @@
                     </div>
                     <div class="blog-text">
                         <span>{{ post.jpublish }}</span>
-                        <h3 class="blog-title">{{ post.title }}</h3>
-                        <!-- <p>{{ post.content.html|safe }}</p> -->
-                        <a href="{% url 'post_detail' post.slug %}">بیشتر...</a>
+                        <h3 class="blog-title"><a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></h3>
                     </div>
                 </div>
             {% endfor %}

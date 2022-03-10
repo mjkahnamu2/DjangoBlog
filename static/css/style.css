@@ -3,6 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+p{
+    color: #ffffff;
+}
 a{
     text-decoration: none;
 }
@@ -15,6 +18,7 @@ ul{
     src: url(../fonts/myfont.ttf);
 }
 body{
+    background-color: #131417;
     font-family: myfont;
     margin: 0px;
     padding: 0px;
@@ -22,6 +26,7 @@ body{
 
 /* blog */
 #blog{
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,11 +41,11 @@ body{
     flex-direction: column;
 }
 .blog-heading span{
-    color: #f33c3c;
+    color: #2E8542;
 }
 .blog-heading h3{
     font-size: 2.4rem;
-    color: #2b2b2b;
+    color: #ffffff;
     font-weight: 600;
 }
 .blog-container{
@@ -52,8 +57,8 @@ body{
 }
 .blog-box{
     width: 350px;
-    background-color: #ffffff;
-    border: 1px solid #ececec;
+    background-color: #131417;
+    border: 1px solid #131417;
     margin: 20px;
 }
 .blog-img{
@@ -72,17 +77,13 @@ body{
     flex-direction: column;
 }
 .blog-text span{
-    color: #f33c3c;
+    color:  #2E8542;
     font-size: 0.9rem;
 }
 .blog-text .blog-title{
     font-size: 1.3rem;
     font-weight: 500;
-    color: #272727;
-}
-.blog-text .blog-title:hover{
-    color: #f33c3c;
-    transition: all ease 0.3s;
+    color: #ffffff;
 }
 .blog-text p{
     color: #9b9b9b;
@@ -95,10 +96,11 @@ body{
     margin: 20px 0px;
 }
 .blog-text a{
-    color: #0f0f0f;
+    color: #ffffff;
 }
 .blog-text a:hover{
-    color: #f33c3c;
+    color: #ffffff;
+    font-weight: bolder;
     transition: all ease 0.3s;
 }
 @media(max-width:1250px){
@@ -121,9 +123,13 @@ body{
     }
 }
 .navbar{
-    background-color: #333;
+    overflow: hidden;
+    top: 0;
+    position: fixed;
+    background-color: #222221;
     float: right;
     width: 100%;
+    border-bottom: 2px solid #404040;
 }
 .navbar a{
     float: right;
@@ -131,7 +137,8 @@ body{
     text-align: left;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: large;
+    font-weight: bold;
 }
 .search-input{
     padding: 5px;

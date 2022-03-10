@@ -13,8 +13,7 @@
                     </div>
                     <div class="blog-text">
                         <span>{{ post.publish_date }}</span>
-                        <h3 class="blog-title">{{ post.title }}</h3>
-                        <a href="{% url 'post_detail' post.slug %}">بیشتر...</a>
+                        <h3 class="blog-title"><a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></h3>
                     </div>
                 </div>
             {% endfor %}
