@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: poppins;
     box-sizing: border-box;
 }
 a{
@@ -10,8 +9,13 @@ a{
 ul{
     list-style: none;
 }
+@font-face{
+    font-family: myfont;
+    src: url(../fonts/myfont.otf);
+    src: url(../fonts/myfont.ttf);
+}
 body{
-    direction: rtl;
+    font-family: myfont;
     margin: 0px;
     padding: 0px;
 }
