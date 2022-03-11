@@ -1,5 +1,5 @@
 .content{
-    background-color: #EEEAE7;
+    background-color: #E8EAEE;
 }
 *{
     margin: 0px;
@@ -28,7 +28,7 @@ body{
 
 /* blog */
 #blog{
-    background-color: #EEEAE7;
+    background-color: #E8EAEE;
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -52,8 +52,7 @@ body{
     font-weight: 600;
 }
 .blog-container{
-    max-width: 1000px;
-    background-color: #fff;
+    background-color: #E8EAEE;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,12 +60,14 @@ body{
     flex-wrap: wrap;
 }
 .blog-box{
-    width: 350px;
-    background-color: #fff;
-    border: 1px solid #000;
+    width: 1000px;
+    background-color: #F3F3F3;
     margin: 20px;
+    box-shadow: 0 7px 7px 0 rgba(0,0,0,0.1);
+    -webkit-border-radius: 5px;
 }
 .blog-img{
+    margin: 10px;
     width: auto;
     height: 200px;
 }
@@ -76,13 +77,17 @@ body{
     object-fit: cover;
     object-position: center;
 }
+.blog-abstract p{
+    color: #222;
+    margin: 10px;
+}
 .blog-text{
     padding: 30px;
     display: flex;
     flex-direction: column;
 }
 .blog-text span{
-    color:  #1A73E8;
+    color:  #999;
     font-size: 0.9rem;
 }
 .blog-text .blog-title{
@@ -128,12 +133,13 @@ body{
     }
 }
 .navbar{
-    overflow: hidden;
-    top: 0;
+    display: flex;
+    background-color: rgba(50,50,50, 0.95);
     position: fixed;
-    background-color: #1e1e20;;
-    float: right;
+    top: 0;
     width: 100%;
+    display: block;
+    transition: top 0.3s;
 }
 .navbar a{
     float: right;
@@ -153,4 +159,10 @@ body{
     position: absolute;
     right: auto;
     left: 5px;
+}
+hr{
+    border-style: dashed;
+    margin: 0 3rem 1.5rem;
+    color: #333;
+    opacity: 60%;
 }

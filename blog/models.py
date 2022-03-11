@@ -1,3 +1,4 @@
+from distutils.text_file import TextFile
 from django.db import models
 from django_quill.fields import QuillField
 from extensions.utils import jalali_converter
@@ -10,6 +11,7 @@ STATUS = (
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
+    abstract = models.TextField(null=True)
     content = QuillField()
     image = models.ImageField(upload_to='static/images')
     slug = models.SlugField(unique=True, allow_unicode=True)

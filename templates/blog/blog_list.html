@@ -4,17 +4,20 @@
     <section id="blog">
         <div class="blog-heading">
             <span>پست های اخیر</span>
-            <h3>وبلاگ شخصی و تخصصی جنگو </h3>
+            <h3>وبلاگ <span>شخصی</span> و <span>تخصصی</span> جنگو</h3>
         </div>
         <div class="blog-container">
             {% for post in posts %}
                 <div class="blog-box">
+                    <div class="blog-text">
+                        <h3 class="blog-title"><a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></h3>
+                        <span>{{ post.jpublish }}</span>
+                    </div><hr />
                     <div class="blog-img">
                         <img src="{{ post.image }}" alt="img">
                     </div>
-                    <div class="blog-text">
-                        <span>{{ post.jpublish }}</span>
-                        <h3 class="blog-title"><a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></h3>
+                    <div class="blog-abstract">
+                        <p>{{ post.abstract }}</p>
                     </div>
                 </div>
             {% endfor %}
