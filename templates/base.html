@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Django Blog</title>
+    <!-- fav-icon -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +20,11 @@
 <body class="content">
     <!-- navbar -->
     <div class="navbar">
-        <a href="{% url 'post_list' %}">وبلاگ جنگو</a>
-            <a href="{% url 'contact_me' %}">تماس با من</a>
-            <form action="{% url 'post_search' %}" method="get">
-                <input name='search' class="search-input" type="text" placeholder="جستجو">
-            </form>
+        <a href="{% url 'post_list' %}">PersianDjango</a>
+        <a href="{% url 'contact_me' %}">Contact Me</a>
+        <form action="{% url 'post_search' %}" method="get">
+            <input name='search' class="search-input" type="text" placeholder="search">
+        </form>
     </div>
     {% block content %}
     {% endblock %}

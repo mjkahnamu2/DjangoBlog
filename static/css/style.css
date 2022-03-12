@@ -134,16 +134,17 @@ body{
 }
 .navbar{
     display: flex;
-    background-color: rgba(50,50,50, 0.95);
+    background-color: #F3F3F3;
     position: fixed;
     top: 0;
     width: 100%;
     display: block;
     transition: top 0.3s;
+    box-shadow: 0 7px 7px 0 rgba(0,0,0,0.1);
 }
 .navbar a{
     float: right;
-    color: #ffffff;
+    color: #000;
     text-align: left;
     padding: 14px 16px;
     text-decoration: none;
@@ -153,12 +154,21 @@ body{
 .navbar a:hover{
     color: #1A73E8;
 }
+.navbar .site-logo img{
+    height: calc( var(--header-height) - var(--su-2) * 2);
+}
 .search-input{
     padding: 5px;
     margin-top: 10px;
     position: absolute;
     right: auto;
     left: 5px;
+    -webkit-border-radius: 5px;
+    display: inline-block;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    height: auto;
+    margin-top: 15px;
 }
 hr{
     border-style: dashed;

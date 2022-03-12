@@ -13,7 +13,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     abstract = models.TextField(null=True)
     content = QuillField()
-    image = models.ImageField(upload_to='static/images')
+    image = models.ImageField(upload_to='static/images', blank=True)
     slug = models.SlugField(unique=True, allow_unicode=True)
     publish_date = models.DateTimeField()
     status = models.BooleanField(default=0)
