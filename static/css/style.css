@@ -66,6 +66,9 @@ body{
     box-shadow: 0 7px 7px 0 rgba(0,0,0,0.1);
     -webkit-border-radius: 5px;
 }
+.blog-box:hover{
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+}
 .blog-img{
     margin: 10px;
     width: auto;
