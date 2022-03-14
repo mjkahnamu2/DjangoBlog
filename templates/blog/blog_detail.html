@@ -3,7 +3,6 @@
 {% block content %}
     <style>
         #detail-section{
-            text-align: right;
             max-width: 1000px;
             margin: auto;
             padding: 10px;
@@ -14,10 +13,17 @@
             margin: auto;
             width: 100%;
         }
+        .content-section img {
+            margin: 25px 0;
+        }
         .content-section{
             max-width: 1000px;
             margin-top: 20px;
             padding: 10px;
+        }
+        .content-section div {
+            text-align: left;
+            -webkit-border-radius: 5px;
         }
         .post-section{
             box-shadow: 0 5px 5px 0 rgba(0,0,0,0.1);
@@ -34,7 +40,7 @@
             {% endif %}
             <div class="content-section">
                 <h1>{{ post.title }}</h1>
-                <p>{{ post.content.html|safe }}</p>
+                <p>{{ post.content|safe }}</p>
             </div>
         </div>
     </section>
