@@ -39,11 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #3rd-party package
-    'django_quill',
     'extensions',
     'ckeditor',
     'ckeditor_uploader',
-    'tinymce',
 
     #local
     'blog',
