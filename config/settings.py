@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'extensions',
     'ckeditor',
     'ckeditor_uploader',
+    'tinymce',
 
     #local
     'blog',
